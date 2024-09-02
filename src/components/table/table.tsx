@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
-import TableStyles from "./Table.module.scss";
+import TableStyles from "./table.scss";
 import Element from "../Element/Element";
 import { OptionsContext } from "../../context/OptionsContext";
 import Filters from "../Filters/Filters";

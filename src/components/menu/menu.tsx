@@ -3,8 +3,8 @@ import { createPortal } from "react-dom";
 import { useSearchParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun, faLanguage } from "@fortawesome/free-solid-svg-icons";
-import { ThemeContext } from "../../context/ThemeContext";
-import useToggle from "../../hooks/useToggle";
+import { ThemeContext } from "../../misctype/themes";
+import useToggle from "../../misctype/toggle";
 import Styles from "./menu.scss";
 
 const Menu: React.FC = () => {

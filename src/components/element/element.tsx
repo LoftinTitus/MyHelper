@@ -1,5 +1,5 @@
 import { Link, useSearchParams } from "react-router-dom";
-import { handleKeyDown } from "../../mistctype/utilities";
+import { handleKeyDown } from "../../misctype/utilities";
 import S from "./element.scss";
 
 interface Props {

@@ -1,0 +1,30 @@
+:root {
+    --background: #22252d;
+    --foreground: #292d36;
+    --button: #22252d;
+    --button-hover: #1c1f25;
+    --button-active: #1e222a;
+    --text: #f9f9f9;
+    --shadow: rgba(32 37 41 / 20%);
+    --radioactive: #39542b;
+    --nonmetal: #efb466;
+    --halogen: #ead355;
+    --noble-gas: #523c6f;
+    --alkali-metal: #ff616d;
+    --alkaline-earth-metal: #ed8d67;
+    --transition-metal: #32bdca;
+    --post-transition-metal: #5a88e5;
+    --metalloid: #303d57;
+    --lanthanide: #58ac30;
+    --actinide: #9cd15b;
+}
+
+#light {
+    --background: #f7f7f7;
+    --foreground: #f9f9f9;
+    --button: #f5f5f5;
+    --button-hover: #ebebeb;
+    --button-active: #f7f7f7;
+    --text: #292d36;
+    --shadow: rgba(149 157 165 / 20%);
+}

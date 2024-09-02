@@ -1,10 +1,9 @@
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import TableStyles from "./table.scss";
-import Element from "../Element/Element";
-import { OptionsContext } from "../../context/OptionsContext";
-import Filters from "../Filters/Filters";
-import { LanguageContext } from "../../context/LanguageContext";
+import Element from "../element/element";
+import { OptionsContext } from "../../misctype/options";
+import Filters from "../filters/filters";
 
 const Table: React.FC = () => {
     const { filter } = useContext(OptionsContext);

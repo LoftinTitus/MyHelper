@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Poppins, sans-serif;
+    background-color: var(--background);
+}
+
+body,
+#root {
+    color: var(--text);
+    background-color: var(--background);
+}
+
+html[data-theme="light"] {
+    color: #292d36;
+    background-color: #f7f7f7;
+
+    body,
+    #root {
+        --text: #292d36;
+
+        color: #292d36;
+        background-color: #f7f7f7;
+    }
+}
+
+.app {
+    position: relative;
+
+    min-height: 100vh;
+    padding: 0.75rem 2rem;
+
+    color: var(--text);
+
+    background-color: var(--background);
+
+    transition: var(--hover);
+
+    & > * {
+        margin-inline: auto;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5a88e5;
+    background-clip: content-box;
+    border-radius: 0.5em;
+
+    &:hover {
+        background-color: #6493f2;
+    }
+
+    &:active {
+        background-color: #4e7cd6;
+    }
+}

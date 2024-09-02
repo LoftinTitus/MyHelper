@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
-import { OptionsContext } from "../../context/OptionsContext";
+import { OptionsContext } from "../../misctype/options";
 import Checkbox from "../checkbox/checkbox";
 import Styles from "./filters.scss";
 

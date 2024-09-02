@@ -1,0 +1,146 @@
+@use "../../abstract/mixins" as *;
+
+.element_wrapper {
+    cursor: pointer;
+
+    width: 4.375rem;
+    height: 4.375rem;
+    padding: 0.15rem;
+
+    text-decoration: none;
+
+    transition: var(--hover);
+
+    .element {
+        @include flex($justify: center);
+
+        height: 100%;
+        padding: 0.15rem 0.5rem;
+        background: var(--background);
+        transition: inherit;
+    }
+
+    .header {
+        @include flex($direction: row, $justify: space-between);
+
+        width: 100%;
+        margin-bottom: 0.15em;
+    }
+
+    .title {
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+
+    .number {
+        font-size: 0.85rem;
+        font-weight: 700;
+    }
+
+    .name {
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+
+    .mass {
+        margin-top: 0.15em;
+        font-size: 0.65rem;
+        font-weight: 500;
+    }
+
+    &:hover,
+    &:focus-visible,
+    &.active {
+        transform: scale(1.05);
+
+        .element {
+            background: transparent;
+        }
+
+        .title,
+        .name,
+        .number,
+        .mass {
+            -webkit-text-fill-color: var(--background);
+        }
+    }
+}
+
+.s {
+    @include background-gradient(#ff616d, #ff9971);
+
+    /* stylelint-disable-next-line no-descending-specificity */
+    .title,
+    .name,
+    .mass,
+    .number {
+        @include text-gradient(#ff616d, #ff9971);
+    }
+}
+
+.d {
+    @include background-gradient(#37cfdc, #5a88e5);
+
+    /* stylelint-disable-next-line no-descending-specificity */
+    .title,
+    .name,
+    .mass,
+    .number {
+        @include text-gradient(#37cfdc, #5a88e5);
+    }
+}
+
+.p {
+    @include background-gradient(#ffc171, #ffea71);
+
+    /* stylelint-disable-next-line no-descending-specificity */
+    .title,
+    .name,
+    .mass,
+    .number {
+        @include text-gradient(#ffc171, #ffea71);
+    }
+}
+
+.f {
+    @include background-gradient(#58ac30, #a7df62);
+
+    /* stylelint-disable-next-line no-descending-specificity */
+    .title,
+    .name,
+    .mass,
+    .number {
+        @include text-gradient(#58ac30, #a7df62);
+    }
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.2;
+}
+
+:global(#light) {
+    .element_wrapper {
+        .element {
+            background: transparent;
+        }
+
+        .title,
+        .name,
+        .number,
+        .mass {
+            -webkit-text-fill-color: var(--background);
+        }
+    }
+
+    .p {
+        @include background-gradient(#f5ba6c, #ecd867);
+    }
+}
+
+:global(#dark) {
+    .element_wrapper {
+        outline: none;
+    }
+}

@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { handleKeyDown } from "../../utilities/utilities";
+import { handleKeyDown } from "../../misctype/utilities.tsx";
 import S from "./checkbox.scss";
 
 interface Props {

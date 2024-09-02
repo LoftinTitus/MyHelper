@@ -5,9 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { DefaultTFuncReturn } from "i18next";
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
-import { LanguageContext } from "../../context/LanguageContext";
 import { formatValue } from "../../misctype/utilities";
-import Modal from "../Modal/Modal";
+import Modal from "../modal/modal";
 import Styles from "./elementinfo.scss";
 
 interface Props {

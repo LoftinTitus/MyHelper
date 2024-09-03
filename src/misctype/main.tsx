@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
-import App from "./App";
-import LanguageContextProvider from "./context/LanguageContext";
-import OptionsContextProvider from "./context/OptionsContext";
-import ThemeContextProvider from "./context/ThemeContext";
-import "./i18n";
+import App from "./misctype/App";
+import OptionsContextProvider from "./misctype/options";
+import ThemeContextProvider from "./misctype/themes";
+import ".misctype//i18";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
